@@ -1,15 +1,15 @@
 :root{
-    --primary-color: rgb(138, 38, 38);
-    --secondary-color: rgb(12, 12, 117);
+    --primary-color: rgb(112, 164, 243);
+    --secondary-color: rgb(241, 101, 101);
     --light-color: #f4f4f4;
     --dark-color: #333;
     --max-width: 1100px;
 }
 
 .category{
-   --ai-color: purple;
-   --vr-color:yellow;
-   -hardware-color: green;
+   --ai-color: rgb(102, 31, 102);
+   --vr-color:rgb(117, 117, 19);
+   -hardware-color: rgb(247, 166, 180);
 }
 
 *{
@@ -93,6 +93,47 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     text-align: center;
 }
+
+.card{
+    background: #fff;
+    padding: 1rem;
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+.bg-secondary{
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a{
+    color: #fff;
+}
+
+.py-1{ padding: 1.5rem 0 }
+.py-2{ padding: 2rem 0 }
+.py-3{ padding: 3rem 0 }  
+.p-1{ padding: 1.5rem 0 }
+.p-2{ padding: 2rem 0 }
+.p-3{ padding: 3rem 0 }
  /* Navigation */
 
  #main-nav{
@@ -181,3 +222,24 @@ h1,h2,h3,h4,h5,h6{
  #showcase .showcase-content p{
      margin-bottom:1rem;
  }
+
+ /* Home Articles */
+ #home-articles .articles-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 1rem;
+ }
+
+ #home-articles .articles-container > *:first-child,
+ #home-articles .articles-container > *:last-child{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 1rem;
+     align-items: center;
+     grid-column: 1/ span 2;
+ }
+
+ #home-articles .articles-container > *:last-child{
+     grid-column: 2/ span 2;
+ }
+
