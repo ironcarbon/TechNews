@@ -149,6 +149,11 @@ h1,h2,h3,h4,h5,h6{
 .list li a:hover{
     color: var(--primary-color) !important;
 }
+
+.technews-font{
+    color:var(--primary-color);
+    font-weight: bold;
+}
  /* Navigation */
 
  #main-nav{
@@ -172,9 +177,6 @@ h1,h2,h3,h4,h5,h6{
  }
  #main-nav .logo .brand{
      font-size: 36px;
-     position: absolute;
-     top: 25px;
-     left:205px;
      
  }
 
